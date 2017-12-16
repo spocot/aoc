@@ -2,7 +2,7 @@ use std::env;
 
 extern crate aoc;
 
-use aoc::{aoc1,aoc2,aoc3,aoc4};
+use aoc::*;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -24,6 +24,10 @@ fn main() {
             4 => match args[2].parse().unwrap() {
                     1 => aoc4::part_1(),
                     2 => aoc4::part_2(),
+                    _ => println!("Not a valid part!")},
+            5 => match args[2].parse().unwrap() {
+                    1 => aoc5::part_1(),
+                    2 => aoc5::part_2(),
                     _ => println!("Not a valid part!")},
             _ => println!("Not a valid day!")
         };
