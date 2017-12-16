@@ -29,6 +29,10 @@ fn main() {
                     1 => aoc5::part_1(),
                     2 => aoc5::part_2(),
                     _ => println!("Not a valid part!")},
+            6 => match args[2].parse().unwrap() {
+                    1 => aoc6::part_1(),
+                    2 => aoc6::part_2(),
+                    _ => println!("Not a valid part!")},
             _ => println!("Not a valid day!")
         };
     } else {
